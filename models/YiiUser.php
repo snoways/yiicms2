@@ -53,7 +53,13 @@ class YiiUser extends ActiveRecord implements IdentityInterface
      *@
      */
 
-    public  function  getUser(){
+
+
+    /**
+     * @username
+     */
+    public function getUsername()
+    {
         return $this->user;
     }
 
