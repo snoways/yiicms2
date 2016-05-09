@@ -18,7 +18,8 @@ use yii\web\NotFoundHttpException;
 class PublicController extends Controller{
 
     public function  actionIndex(){
-    #eeeee
+    #eeeee22
+    #local
        $user=User::find(1)->one();
         echo $user->user."login";
     }
