@@ -4,20 +4,6 @@ use yii\bootstrap\ActiveForm;
 use yii\captcha\Captcha;
 
 
-/*echo Yii::$app->request->getUrl()."<hr/>";
-//除域名外的首页地址
-
-echo Yii::$app->user->returnUrl."<hr/>";
-
-//除域名外的根目录地址
-echo Yii::$app->homeUrl."<hr/>";
-echo Yii::$app->basePath."<hr/>";
-
-echo yii::$app->controllerPath;
-echo "<pre>";
-print_r(Yii::$app);*/
-
-
 ?>
 <!DOCTYPE HTML>
 <html>
@@ -39,7 +25,7 @@ print_r(Yii::$app);*/
 <div class="container">
     <div class="row">
         <div class="col-md-4 sm col-sm-1"></div>
-        <div class="col-md-4 sm col-sm-1 login">
+        <div class="col-md-4 sm col-sm-10 login">
             <h3><p><span class='glyphicon glyphicon-user'></span>&nbsp;欢迎使用用户中心</p></h3>
             <?php $form=ActiveForm::begin([
                 'id'=>'login',
