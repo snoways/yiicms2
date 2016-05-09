@@ -37,7 +37,7 @@ class CaptchaValidator extends Validator
     /**
      * @var string the route of the controller action that renders the CAPTCHA image.
      */
-    public $captchaAction = 'admin/index/captcha';
+    public $captchaAction = 'site/captcha';
 
 
     /**
@@ -87,7 +87,7 @@ class CaptchaValidator extends Validator
     public function clientValidateAttribute($object, $attribute, $view)
     {
         $captcha = $this->createCaptchaAction();
-        $code = $captcha->getVerifyCode(false);
+        $code = $captcha->getVerifyCode(true);
         $hash = $captcha->generateValidationHash($this->caseSensitive ? $code : strtolower($code));
         $options = [
             'hash' => $hash,

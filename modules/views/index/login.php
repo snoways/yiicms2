@@ -42,7 +42,7 @@ use yii\captcha\Captcha;
             ])->widget(Captcha::className(),[
                 'template' => '<div class="row"><div class="col-md-3 col-xs-4 mr20">{image}</div><div class="col-md-6 col-xs-6">{input}</div></div>',
                 'imageOptions' => ['alt' => '验证码'],
-                'captchaAction' => 'index/captcha',
+                'captchaAction' => '../site/captcha',
             ]); ?>
 
 
