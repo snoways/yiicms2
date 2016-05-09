@@ -186,11 +186,10 @@ class IndexController extends Controller{
             }
         } else
         {
-            $model->addError('verifyCode', '验证码不对');
+            return $this->render('login', ['model' => $model]);
         }
 
-        // display the login form
-        return $this->render('login', ['model' => $model]);
+
 
         //return $this->redirect(Yii::app()->controller->module->returnUrl);
 
