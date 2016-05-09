@@ -83,7 +83,7 @@ print_r(Yii::$app);*/
                         <img id="imgVerifyCode" onclick="changeVerifyCode()"  alt="验证码">
                     </div>
                     <div class="col-md-3 col-xs-3">
-                        <a style="cursor:pointer;vertical-align: middle;line-height: 40px;" onclick="changeVerifyCode()">换一张</a>
+                        <a style="cursor:pointer;vertical-align: middle;line-height: 46px;" onclick="changeVerifyCode()">换一张</a>
                     </div>
                 </div>
 
